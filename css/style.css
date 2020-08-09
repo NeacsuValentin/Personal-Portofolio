@@ -127,7 +127,7 @@ body {
 #about h2 #experience{
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #about h3 {
@@ -205,6 +205,9 @@ body {
 
 #education {
     height: 100vh;
+    margin-top: 2rem;
+    padding: 5rem 0;
+}
 }
 #education-bg {
     position: absolute;
