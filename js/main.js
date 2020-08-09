@@ -77,11 +77,12 @@ myform.submit(function(event){
   var template_id = "template_2SvIv66k";
   var deleteFirstName = document.getElementById('deleteFirstName');
   var cuvaloare = deleteFirstName.value
-  myform.find("button").text("Sending...");
+  myform.find("button");
   emailjs.sendForm(service_id,template_id,myform[0])
   	.then(function(){ 
     	alert("Sent!");
-       myform.find("button").text("Send in your inbox")
+       myform.find("button");
+       $("#myform")[0].reset();
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
        myform.find("button").text("Send");
