@@ -82,21 +82,29 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     position: absolute;
     top: 81px;
-    left: 0;
+    left: 0px;
     bottom: 0;
     right: 0;
     color: #fff;
-    /* float: left; */
-    /* margin-left: 20px; */
+    /* /* float: left; */
+     /* margin-left: 20px; */
 }
 
-.showcase-content h1 {
+.showcase-content h1{
     font-size: 3rem;
-    margin-bottom: 2rem;
     transition:  0.5s;
+}
+
+.showcase-content p{
+    font-size: 2rem;
+    transition:  0.5s;
+}
+
+.text-secondary{
+    color: grey;
 }
 
 .showcase-content .btn:hover {
@@ -106,14 +114,14 @@ body {
 
 .showcase-content .btn {
     font-size: 1.5rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 
 .btn {
     color: #3693ff;
     text-decoration: none;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border: 1px solid #3693ff;
     border-radius: 10px;
     font-weight: bold;
@@ -121,7 +129,8 @@ body {
 
 /* Section About*/
 #about {
-    padding: 5rem 0;
+    /* padding: 5rem 0; */
+    background: #96aeb6;
 }
 
 #about h2 #experience{
@@ -148,6 +157,10 @@ body {
     flex: 1;
 }
 
+.lead {
+    text
+}
+
 #about .about-text{
     text-align: justify;
 }
@@ -163,12 +176,14 @@ body {
 /*Section Experience*/
 
 #experience {
-    padding: 5rem 0;
+    padding: 2rem 0;
+    background: #96aeb6;
 }
 
 #experience h2{
     margin-bottom: 2rem;
     font-size: 2rem;
+    /* margin-top: 1rem; */
 }
 
 #experience h3 {
@@ -201,61 +216,11 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/*Section Eductation*/
-
-#education {
-    height: 100vh;
-    margin-top: 2rem;
-    padding: 5rem 0;
-}
-}
-#education-bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background : rgba (0,0,0,0.6);
-    padding: 5rem 0;
-}
-
-.education-bg .container h2{
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-
-#education h3{
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #fff;
-}
-
-#education p{
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: rgb(139, 89, 89);
-}
-
-#education .boxes {
-    display: flex;
-    flex-direction: column;
-} 
-
-#education .box {
-    background: rgba(164, 177, 192, 0.7);
-    padding: 0.5rem;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#education .box:first-child,  #education .box:nth-child(2) , #education .box:nth-child(3), #education .box:nth-child(4), #education .box:nth-child(5) {
-    margin-bottom: 0.5rem;
-}
-
 /*Section Contact*/
 
 #contact {
-    padding: 5rem 0;
+    padding: 2rem 0;
+    background: #96aeb6;
 }
 
 #contact h2 {
@@ -329,6 +294,160 @@ body {
     top: -7%;
     left:45%
 }
+
+
+/*Section Education*/
+
+#education {
+    /* height: 100vh; initial */
+    /* margin-top: 2rem; */
+    padding: 1rem 1rem;
+    background:#96aeb6;
+    /* margin-bottom: 2rem; */
+    display: flex;
+}
+
+
+#education .education {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+
+}
+
+#education .experience {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+#education h3.title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color:#302e4d
+}
+
+#education .timeline-box{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+#education .timeline{
+    background-color: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+#education .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 20px;
+}
+
+#education .timeline .timeline-item:last-child{
+    padding-bottom:0px ;
+}
+
+#education .timeline .timeline-item::before{
+    content: '';
+    width:1px;
+    position: absolute;
+    height: 100%;
+    left:0;
+
+}
+
+#education .timeline .circle-dot {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 15px;
+    width: 15px;
+    left: -7px;
+    color: red;
+
+}
+
+#education .timeline .timeline-date {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    color: #302e4d; 
+}
+
+#education .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+
+#education .timeline .timeline-title {
+    font-weight: 700;
+    font-size:18px;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    color:#302e4d
+}
+
+#education .timeline .timeline-text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin:0;
+
+}
+
+/* }
+#education-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background : rgba (0,0,0,0.6);
+    padding: 5rem 0;
+}
+
+.education-bg .container h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#education h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#education p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(139, 89, 89);
+}
+
+#education .boxes {
+    display: flex;
+    flex-direction: column;
+} 
+
+#education .box {
+    background: rgba(235, 238, 243, 0.7);
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#education .box:first-child,  #education .box:nth-child(2) , #education .box:nth-child(3), #education .box:nth-child(4), #education .box:nth-child(5) {
+    margin-bottom: 0.5rem;
+} */
+
+
 
 /*Footer*/
 footer{
