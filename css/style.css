@@ -332,11 +332,8 @@ section button:hover{
 /*Section Education*/
 
 #education {
-    /* height: 100vh; initial */
-    /* margin-top: 2rem; */
     padding: 1rem 1rem;
     background:#96aeb6;
-    /* margin-bottom: 2rem; */
     display: flex;
     justify-content: center;
 }
@@ -465,9 +462,6 @@ footer li a{
 
 footer li a:hover{
     background-color:#3693ff ;
-
-
-
 }
 
 
